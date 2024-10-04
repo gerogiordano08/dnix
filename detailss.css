@@ -1,0 +1,12 @@
+img{
+    width: 100%;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+/* Disable blue highlight on touch for links and images */
+a, img {
+    -webkit-tap-highlight-color: transparent;
+}

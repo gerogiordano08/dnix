@@ -41,8 +41,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 const flipContainer = document.querySelector('.flip-container');
-let startX;
+    const frontImage = document.querySelector('.front');
+    const backImage = document.querySelector('.back');
+    const dot1 = document.getElementById('dot1');
+    const dot2 = document.getElementById('dot2');
+    let startX;
 
+    function updateDots() {
+        if (flipContainer.classList.contains('flipped')) {
+            dot1.classList.remove('active');
+            dot2.classList.add('active');
+        } else {
+            dot1.classList.add('active');
+            dot2.classList.remove('active');
+        }
+    }
 flipContainer.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
 });
@@ -55,5 +68,7 @@ flipContainer.addEventListener('touchend', (e) => {
     } else if (startX < endX) {
         // Dragged to the right
         flipContainer.classList.remove('flipped');
-    }
+        
+    }updateDots();
 });
+updateDots();

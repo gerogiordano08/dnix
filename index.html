@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Mi Argentina</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <img class="top" src="img/AAA.png" alt="flecha" />
+      <a href="midocs.html"><img class="top" src="img/AAA.png" alt="flecha"></a>
       <span></span>
     </header>
     <div class="a">
@@ -18,18 +21,23 @@
             <img class="dnii back" src="img/dni222.jpg" alt="dni2" />
         </div>
       
+
+      <div class="d">
+        <div class="dots">
+          <span class="dot" id="dot1"></span>
+          <span class="dot" id="dot2"></span>
+        </div>
+        <div class="act"><div class="textact">Última actualización</div> <div class="displays"><div class=date_display id="dateDisplay"></div><div id="timeDisplay">hs</div></div></div></div>
       
-      <div class="d"><div class="act"><div class="textact">Última actualización</div> <div class="displays"><div class=date_display id="dateDisplay"></div><div id="timeDisplay"><br>hs</div></div></div></div>
       
       
       
       
       
-      
-      <div class="e"><img src="img/detalle2.jpg" alt="" class="det" /></div>
+      <div class="e"><a href="detail.html"><img id="det" src="img/detalle2.jpg" alt="detalles" class="det" ></a></div>
       <div class="f"><img src="img/desactivar2.jpg" alt="" class="des" /></div>
       <div class="g"><img src="img/qr.jpg" class="qr" alt="" /></div>
-      <div class="h"><img src="img/flechinqr.jpg" class="flech" alt="" /></div>
+      <div class="h"><img id="qr" src="img/flechinqr.jpg" class="flech" alt="" /></div>
     </div>
     <script src="script.js"></script>
   </body>
