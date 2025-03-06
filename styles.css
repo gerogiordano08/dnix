@@ -4,9 +4,6 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-family: "Barlow", sans-serif;
-  font-weight: 700;
-  font-style: normal;
 }
 /* Disable blue highlight on touch for links and images */
 a,
@@ -37,11 +34,15 @@ header {
   background-color: white;
   margin-top: 2%;
   margin-left: 5%;
-  width: 93%;
+  width: 100%;
   height: 430px;
   border: 1px solid none;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  font-family: "Barlow", sans-serif;
+  font-size: small;
+  font-weight: 500;
+  font-style: normal;
 }
 .b {
   grid-row: 1;
@@ -49,6 +50,9 @@ header {
   margin-top: 5%;
   margin-left: 5%;
   font-size: 1em;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .dnii {
@@ -118,7 +122,10 @@ header {
 }
 .act {
   display: flex;
-  margin-left: 35px;
+  margin-left: 60px;
+}
+.displays {
+  width: 110px;
 }
 .flip-container {
   display: flex;
@@ -126,7 +133,7 @@ header {
   grid-row: 2;
   grid-column: 1/3;
   width: 85%;
-  height: 220px;
+  height: 200px;
 }
 
 .dnii {
